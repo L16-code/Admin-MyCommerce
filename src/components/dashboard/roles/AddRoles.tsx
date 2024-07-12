@@ -69,7 +69,7 @@ const AddRoles: React.FC = () => {
         const formData = {
             name:data.roleName,
             permission: Object.entries(data.selectedPermissions)
-                .filter(([key, value]) => value)
+                .filter(([value]) => value)
                 .map(([key]) => {
                     const permission = permissionMap[key];
                     if (!permission) {
